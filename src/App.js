@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import VsPage from './vsPage';
 import FinalRanking from './finalRanking';
 import Home from './home';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   // 0 : Home Page, 1 : Vs Page, 2 : Final Ranking

@@ -3,10 +3,6 @@ import './items.css';
 import colors from './utils';
 
 class MidItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="mid-item-icon" style={{

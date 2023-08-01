@@ -3,10 +3,6 @@ import './items.css';
 import colors from './utils';
 
 class SmallItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="small-item-icon" style={{
