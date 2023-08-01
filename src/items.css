@@ -1,0 +1,55 @@
+.big-item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+}
+
+.big-item-icon,
+.mid-item-icon,
+.small-item-icon {
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rammetto One', cursive;
+}
+
+.big-item-icon {
+    width: 320px;
+    height: 320px;
+    font-size: 180px;
+}
+
+.mid-item-icon {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 120px;
+}
+
+.small-item-icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+}
+
+.big-item-name {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}

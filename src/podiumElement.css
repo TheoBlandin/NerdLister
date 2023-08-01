@@ -1,0 +1,37 @@
+.podium-element {
+    width: 230px;
+}
+
+.step {
+    display: flex;
+    justify-content: center;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.rank-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #393939;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Rammetto One', cursive;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.name-item {
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.7rem;
+    margin-top: 10px;
+    text-align: center;
+}

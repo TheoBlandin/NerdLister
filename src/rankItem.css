@@ -1,0 +1,19 @@
+.rank-item {
+    background-color: #D6D6D6;
+    border-radius: 10px;
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.rank {
+    margin-left: 20px;
+    font-family: 'Rammetto One', cursive;
+    font-size: 2.5rem;
+}
