@@ -120,7 +120,7 @@ function VsPage(props) {
     }
 
     return (
-        <div className="vs-page" >
+        <div>
             <div className="background-container" style={{
                 backgroundImage: '-webkit-linear-gradient(-20deg, #2F2C46 50%, #B94F25 50%)'
             }}>

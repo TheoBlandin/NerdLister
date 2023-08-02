@@ -60,7 +60,7 @@ class AddItem extends React.Component {
                         visibility: this.props.index == this.props.lenght - 2 && this.props.lenght > 4 ? 'visible' : 'hidden'
                     }}>Delete <span className="del-icon"></span></div>
                 </div>) :
-                (<div className="add-card" tabIndex="0" aria-label="Add a new item" onClick={this.addItem} onKeyDown={this.handleKeyDown}> </div>)
+                (<button className="add-card" tabIndex="0" aria-label="Add a new item" onClick={this.addItem} onKeyDown={this.handleKeyDown}> </button>)
         );
     }
 }

@@ -23,6 +23,13 @@
     width: 320px;
     height: 320px;
     font-size: 180px;
+    transition-duration: 0.17s;
+    border: none;
+}
+
+.big-item-icon:active {
+    transform: translate(12px, 12px);
+    transition-duration: 0.12s;
 }
 
 .mid-item-icon {

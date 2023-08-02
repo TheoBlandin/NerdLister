@@ -33,9 +33,21 @@ class BigItem extends React.Component {
                 bottom: this.props.side == "right" ? 0 : 'auto',
                 right: this.props.side == "right" ? 0 : 'auto',
             }}>
-                <div className="big-item-icon" style={{
-                    color: colors[this.state.icon.color],
-                }}>{this.state.icon.pattern}</div>
+                <div style={{
+                    position: "relative",
+                }}>
+                    <button className='big-item-icon' style={{
+                        color: colors[this.state.icon.color]
+                    }}>{this.state.icon.pattern}</button>
+                    <div className="big-item-icon" style={{
+                        backgroundColor: this.props.color,
+                        transform: "translate(12px, 12px)",
+                        zIndex: -1,
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                    }}></div>
+                </div>
                 <div className="big-item-name">{this.state.name}</div>
             </div>
         );
