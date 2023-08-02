@@ -22,19 +22,28 @@ function Home(props) {
         refElements.forEach((ref) => {
             if (ref.current) {
                 let itemInfo = ref.current.getItem();
-                let flag = false;
-                while (!flag) {
-                    let itemIcon = { "pattern": itemInfo.name[0].toUpperCase(), "color": Math.floor(Math.random() * colors.length)}
-                    if (takenPattern.some(e => e.pattern === itemIcon.pattern && e.color === itemIcon.color) == false) {
-                        takenPattern.push(itemIcon)
-                        itemInfo.icon = itemIcon;
-                        flag = true;
+                if (itemInfo.name !== "") {
+                    let flag = false;
+                    while (!flag) {
+                        let itemIcon = { "pattern": itemInfo.name[0].toUpperCase(), "color": Math.floor(Math.random() * colors.length)}
+                        if (takenPattern.some(e => e.pattern === itemIcon.pattern && e.color === itemIcon.color) == false) {
+                            takenPattern.push(itemIcon)
+                            itemInfo.icon = itemIcon;
+                            flag = true;
+                        }
                     }
+                    itemsToSort.push(itemInfo);
                 }
-                itemsToSort.push(itemInfo);
             }
         });
+
+        if (itemsToSort.length < 3) {
+            alert("You need at least 3 items to start ranking them !");
+            return false;
+        }
+
         props.setItemsToSort(itemsToSort)
+        return true;
     };
 
     const refElements = []
@@ -53,8 +62,9 @@ function Home(props) {
                 ))}
             </div>
             <button className="start-ranking-btn" aria-label="Start ranking the elements" onClick={() => {
-                getItemsToSort();
-                props.onPageChange(1);
+                if (getItemsToSort()) {
+                    props.onPageChange(1);
+                }
             }}>Start ranking now</button>
         </div>
     );

@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Rammetto One', cursive;
+    user-select: none;
 }
 
 .big-item-icon {
