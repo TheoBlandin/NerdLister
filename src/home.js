@@ -2,6 +2,10 @@ import './index.css';
 import { React, useState, createRef } from 'react';
 import colors from './utils';
 import AddItem from './addItem';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 function Home(props) {
     const [addCard, setAddCard] = useState([{ visibility: true }, { visibility: true }, { visibility: true }, { visibility: false }]);
@@ -25,7 +29,7 @@ function Home(props) {
                 if (itemInfo.name !== "") {
                     let flag = false;
                     while (!flag) {
-                        let itemIcon = { "pattern": itemInfo.name[0].toUpperCase(), "color": Math.floor(Math.random() * colors.length)}
+                        let itemIcon = { "pattern": itemInfo.name[0].toUpperCase(), "color": Math.floor(Math.random() * colors.length) }
                         if (takenPattern.some(e => e.pattern === itemIcon.pattern && e.color === itemIcon.color) == false) {
                             takenPattern.push(itemIcon)
                             itemInfo.icon = itemIcon;
@@ -38,7 +42,12 @@ function Home(props) {
         });
 
         if (itemsToSort.length < 3) {
-            alert("You need at least 3 items to start ranking them !");
+            MySwal.fire({
+                title: <p>You need at least three items to start ranking them !</p>,
+                showConfirmButton: true,
+                confirmButtonAriaLabel: 'Close the alert',
+                confirmButtonColor: '#2F2C46',
+            })
             return false;
         }
 
@@ -61,7 +70,7 @@ function Home(props) {
                     <AddItem ref={refElements[index]} key={index} index={index} lenght={addCard.length} visibility={item.visibility} addNewItem={addNewItem} deleteElement={delItem} />
                 ))}
             </div>
-            <button className="start-ranking-btn" aria-label="Start ranking the elements" onClick={() => {
+            <button className="btn" aria-label="Start ranking the elements" onClick={() => {
                 if (getItemsToSort()) {
                     props.onPageChange(1);
                 }

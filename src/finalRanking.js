@@ -24,7 +24,7 @@ class FinalRanking extends React.Component {
                 </div>
                 <div className="separator"></div>
                 {this.rankItems}
-                <button className="start-ranking-btn" aria-label="Start ranking the elements" onClick={() => {
+                <button className="btn" aria-label="Start ranking the elements" onClick={() => {
                     this.props.onPageChange(0);
                 }}>Start a new ranking</button>
             </div>
