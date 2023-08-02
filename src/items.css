@@ -25,6 +25,7 @@
     font-size: 180px;
     transition-duration: 0.17s;
     border: none;
+    cursor: pointer;
 }
 
 .big-item-icon:active {
