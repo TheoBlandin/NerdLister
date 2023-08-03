@@ -1,3 +1,27 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
 .big-item {
     width: 320px;
     display: flex;

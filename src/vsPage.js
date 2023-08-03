@@ -18,13 +18,11 @@ const mergeSort = (setState, initialArray, x, y, result, couple, i, j, leftRef, 
     if (left !== undefined && right !== undefined) {
         if (i < left.length && j < right.length) {
             if (leftRef.current) {
-                leftRef.current.updateName(left[i].name);
-                leftRef.current.updateIcon(left[i].icon);
+                leftRef.current.updateItem(left[i].name, left[i].icon);
             }
 
             if (rightRef.current) {
-                rightRef.current.updateName(right[j].name);
-                rightRef.current.updateIcon(right[j].icon);
+                rightRef.current.updateItem(right[j].name, right[j].icon);
             }
         }
         else {
