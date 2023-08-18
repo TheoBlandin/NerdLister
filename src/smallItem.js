@@ -7,6 +7,7 @@ class SmallItem extends React.Component {
         return (
             <div className="small-item-icon" style={{
                 color: colors[this.props.icon.color],
+                border: "2px solid " + colors[this.props.icon.color],
             }}>{this.props.icon.pattern}</div>
         );
     }

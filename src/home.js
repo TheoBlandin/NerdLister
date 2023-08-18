@@ -14,10 +14,10 @@ function Home(props) {
         { name: "🎨 Colors", items: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Brown", "Black", "White"] },
         { name: "⭐ Superpowers", items: ["Super strength", "Super speed", "Flight", "Teleportation", "Invisibility", "Telekinesis", "Mind reading", "Time travel", "Healing", "Immortality"] },
         { name: "🎸 Musical instruments", items: ["Piano", "Guitar", "Violin", "Drums", "Saxophone", "Flute", "Trumpet", "Bass guitar", "Harp", "Accordion"] },
-        { name: "🌍 Travel Destinations", items: ["Paris", "New York", "Tokyo", "Rome", "Sydney", "London", "Barcelona", "Cape Town", "Rio de Janeiro", "Bali"] },
-        { name: "🍕 Pizza Toppings", items: ["Pepperoni", "Mushrooms", "Green peppers", "Onions", "Olives", "Bacon", "Ham", "Pineapple", "Sausage", "Tomatoes"] },
-        { name: "🎬 Movie Genres", items: ["Action", "Comedy", "Drama", "Horror", "Sci-fi", "Romantic comedy", "Animation", "Thriller", "Fantasy", "Adventure"] },
-        { name: "🍦 Ice Cream Flavors", items: ["Vanilla", "Chocolate", "Strawberry", "Raspberry", "Straciatella", "Mint Chocolate Chip", "Butter Pecan", "Coffee", "Pistachio"] },
+        { name: "🌍 Travel destinations", items: ["Paris", "New York", "Tokyo", "Rome", "Sydney", "London", "Barcelona", "Cape Town", "Rio de Janeiro", "Bali"] },
+        { name: "🍕 Pizza toppings", items: ["Pepperoni", "Mushrooms", "Green peppers", "Onions", "Olives", "Bacon", "Ham", "Pineapple", "Sausage", "Tomatoes"] },
+        { name: "🎬 Movie genres", items: ["Action", "Comedy", "Drama", "Horror", "Sci-fi", "Romantic comedy", "Animation", "Thriller", "Fantasy", "Adventure"] },
+        { name: "🍦 Ice cream flavors", items: ["Vanilla", "Chocolate", "Strawberry", "Raspberry", "Straciatella", "Mint Chocolate Chip", "Butter Pecan", "Coffee", "Pistachio"] },
     ]
 
     const addNewItem = () => {
