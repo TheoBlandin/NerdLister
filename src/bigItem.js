@@ -16,12 +16,12 @@ class BigItem extends React.Component {
     }
 
     updateItem(newName, NewIcon) {
-        this.setState(prevState => ({
+        this.setState({
             name: newName,
             icon: NewIcon,
             animate: true,
             push: false
-        }));
+        });
     }
 
     handleActiveButton() {
