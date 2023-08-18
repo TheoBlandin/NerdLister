@@ -54,7 +54,7 @@ class AddItem extends React.Component {
                 (<div className="card">
                     <div className="add-name">
                         <label htmlFor="name-input">Item {this.props.index + 1}</label><br />
-                        <input type="text" id="name-input" placeholder="Name" onChange={this.handleNameChange}></input>
+                        <input type="text" placeholder="Name" onChange={this.handleNameChange}></input>
                     </div>
                     <div className="del-element" aria-label="Remove the last item" tabIndex="0" onKeyDown={this.handleKeyDownDelete} onClick={this.removeItem} style={{
                         visibility: this.props.index == this.props.lenght - 2 && this.props.lenght > 4 ? 'visible' : 'hidden'
