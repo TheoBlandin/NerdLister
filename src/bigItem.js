@@ -50,10 +50,7 @@ class BigItem extends React.Component {
                 <div style={{
                     position: "relative",
                 }}>
-                    <button className='big-item-icon' onKeyDown={this.handleKeyDown} onClick={(this.handleActiveButton)} onAnimationEnd={() => {
-                        console.log("animation end");
-                        this.props.onClick()
-                    }} style={{
+                    <button className='big-item-icon' onKeyDown={this.handleKeyDown} onClick={(this.handleActiveButton)} onAnimationEnd={this.props.onClick} style={{
                         color: colors[this.state.icon.color],
                         animation: this.state.push ? "pushButton 300ms" : ""
                     }}>{this.state.icon.pattern}</button>

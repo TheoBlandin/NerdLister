@@ -29,6 +29,13 @@ h2 {
   font-weight: lighter;
 }
 
+p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Voltaire', sans-serif;
+}
+
 .background-container {
   position: fixed;
   width: 100%;
@@ -77,7 +84,7 @@ h2 {
   grid-template-columns: repeat(3, 290px);
   justify-items: center;
   gap: 27px 20px;
-  margin-top: 50px;
+  margin-top: 15px;
   grid-auto-rows: 1fr;
 }
 
@@ -96,4 +103,12 @@ h2 {
   background-position: right;
   background-size: 25%;
   padding-right: 50px;
+}
+
+.preset-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
 }
