@@ -78,7 +78,7 @@ function Home(props) {
 
             <div className="preset-items-container">
                 {preSets.map((item, index) => (
-                    <PresetItems id={index} name={item.name} onClick={() => {
+                    <PresetItems ref={createRef()} key={index} id={index} name={item.name} onClick={() => {
                         const items = item.items;
                         const itemsToSort = [];
                         var takenPattern = [];
