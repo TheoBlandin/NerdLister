@@ -18,8 +18,19 @@
     }
 }
 
-.animate {
-    animation: slideInFromLeft 0.5s ease-out;
+@keyframes pushButton {
+    0% {
+        transform: translate(12px, 12px);
+    }
+
+    50% {
+        transform: translate(12px, 12px); 
+        transition-duration: 2ms;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
 .big-item {
@@ -53,10 +64,13 @@
     cursor: pointer;
 }
 
-.big-item-icon:active {
-    transform: translate(12px, 12px);
-    transition-duration: 0.12s;
+.push-button-animation {
+    animation: pushButton 300ms;
 }
+
+/* .big-item-icon:active {
+    animation: pushButton 300ms;
+} */
 
 .mid-item-icon {
     width: 200px;
