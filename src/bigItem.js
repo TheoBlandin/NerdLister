@@ -12,6 +12,7 @@ class BigItem extends React.Component {
             push: false
         };
         this.handleActiveButton = this.handleActiveButton.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
 
     updateItem(newName, NewIcon) {
