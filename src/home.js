@@ -53,7 +53,7 @@ function Home(props) {
 
         if (itemsToSort.length < 3) {
             MySwal.fire({
-                title: <p>You need at least three items to start ranking them !</p>,
+                title: <p style='color:black'>You need at least three items to start ranking them !</p>,
                 showConfirmButton: true,
                 confirmButtonAriaLabel: 'Close the alert',
                 confirmButtonColor: '#2F2C46',
